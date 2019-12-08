@@ -1,0 +1,16 @@
+
+clang-format.exe -i
+-style="{ BasedOnStyle: LLVM, BreakBeforeBraces: GUN, IndentWidth: 2, TabWidth: 2, Standard: Cpp11, ColumnLimit: 0, BreakBeforeBraces: GNU, AlignConsecutiveAssignments: true, AlignTrailingComments: true, BinPackArguments: false, BinPackParameters: false }"
+
+clang-format.exe -i -style="{ BasedOnStyle: LLVM, BreakBeforeBraces: GUN, IndentWidth: 2, TabWidth: 2, Standard: Cpp11, ColumnLimit: 0, BreakBeforeBraces: GNU, AlignConsecutiveAssignments: true, AlignTrailingComments: true, BinPackArguments: false, BinPackParameters: false }"
+
+uvision用
+clang-format.exe -i
+-style="{ BasedOnStyle: LLVM, BreakBeforeBraces: GUN, IndentWidth: 2, TabWidth: 2, Standard: Cpp11, ColumnLimit: 0, BreakBeforeBraces: GNU, AlignConsecutiveAssignments: true, AlignTrailingComments: true, BinPackArguments: false, BinPackParameters: false }"
+
+
+ひな形出力
+clang-format.exe -dump-config > clang-format_orig.txt
+
+コマンドラインで利用
+clang-format -style={style} [-i] {file}
